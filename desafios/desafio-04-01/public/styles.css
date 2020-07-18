@@ -30,7 +30,7 @@ header {
 
 /* Fazendo o tratamento de acordo com o 'a' apos o 'a' anterior */
 .links a + a {
-    margin-left: 32px;
+    margin-left: 48px;
 }
 
 .links a {

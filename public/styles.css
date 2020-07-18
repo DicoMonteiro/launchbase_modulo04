@@ -68,3 +68,53 @@ header {
     transition: width 200ms ease-in-out;
     /* transition: width 200ms cubic-bezier(1, 0.2, 0.65, 0.89); */
 }
+
+
+/* ==== CARD ==== */
+
+.card {
+    background-color: white;
+    width: 800px;
+    height: 400px;
+
+    /* espaçamento ao centro - para funcionar precisa do width e height*/
+    margin: 45px auto;
+    /* Definindo como grid o display para poder dividir em colunas os elementos  */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* Coloando sombra na DIV - Se trata do eixo x, eixo y, curva a sombra e borrar a sombra */
+    box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0,2);
+
+    /* animation */
+    opacity: 0;
+    animation: up 200ms ease-out 1s forwards;
+
+    /* animation-name: up; */
+    /* animation-duration: 700ms; */
+    /* Retorna para sua posicao incial, no caso para opacity = 0 */
+    /* animation-fill-mode: backwards; */
+    /* Finaliza na última posição, no caso para opacity = 1 */
+    /* animation-fill-mode: forwards; */
+    /* animation-timing-function: ease-out; */
+    /* animation-delay: 1s; */
+    /* Determinar em qual estado a animação vai estar, no exemplo, esta pausada */
+    /* animation-play-state: paused; */
+    /* Determinar em qual estado a animação vai estar, no exemplo, esta em execução */
+    /* animation-play-state: running; */
+    /* Realizar a direção da animação, no exemplo, ele vai executar o inverso, sumindo com o elemento */
+    /* animation-direction: reverse; */
+    /* Determina a interação que a animação vai ter ao ser exibida */
+    /* animation-iteration-count: 3; */
+}
+
+
+@keyframes up {
+    from {
+        /* opacity: 0; */
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+    }
+}
