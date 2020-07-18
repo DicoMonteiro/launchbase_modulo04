@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #7159c1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    padding: 32px;
+    text-align: center;
+    /* Adidicionando para respeitar o padding (border ou margin) com o width especificado */
+    box-sizing: border-box;
+}
+
+.links {
+    font-size: 22px;
+}
+
+/* Fazendo o tratamento de acordo com o 'a' apos o 'a' anterior */
+.links a + a {
+    margin-left: 32px;
+}
+
+.links a {
+    /* margin-left: 32px; */
+    text-decoration: none;
+    color: #777;
+    position: relative;
+}
+
+.links a.active {
+   font-weight: bold;
+   color: var(--primary-color); 
+}
+
+.links a:hover {
+    /* text-decoration: underline; */
+    color: var(--primary-color); 
+    /* Realizando o transição para ir aplicando ao elemento */
+}
+
+.links a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    /* Posicionando como absoluto em virtude do pai ter sido setado como relativo */
+    position: absolute;
+    left: 0;
+    /* Configurando para ser amostrado ao passar o mouse um underline com o espacamento de -4px */
+    bottom: -4px;
+}
+
+.links a:hover::after {
+    width: 100%;
+    transition: width 200ms ease-in-out;
+    /* transition: width 200ms cubic-bezier(1, 0.2, 0.65, 0.89); */
+}
