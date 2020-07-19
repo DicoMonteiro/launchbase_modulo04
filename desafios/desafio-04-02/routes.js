@@ -1,28 +1,18 @@
 const express = require('express')
 const routes = express.Router()
 
-const instructors =require('./instructors')
-
 routes.get("/", function(req, res) {
     // return res.send("Hi! How's going?")
-    return res.redirect("/instructors")
+    return res.redirect("/teachers")
 })
 
-routes.get("/instructors", function(req, res) {
-    return res.render("instructors/index")
+routes.get("/teachers", function(req, res) {
+    return res.render("teachers/index")
 })
 
-routes.get('/instructors/create', function(req, res) {
-    return res.render('instructors/create')
+routes.get("/students", function(req, res) {
+    return res.send("students")
 })
-
-routes.post("/instructors", instructors.post)
-
-routes.get("/members", function(req, res) {
-    return res.send("members")
-})
-
-
 
 
 // routes.get("/video", function(req, res) {

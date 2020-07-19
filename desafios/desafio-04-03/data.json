@@ -1,0 +1,14 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "http://www.monteiro&monteiro.io",
+      "name": "Adriano Barreto Monteiro de Almeida",
+      "birth": 472521600000,
+      "escolaridade": "mestrado",
+      "class_type": "EAD",
+      "disciplinas": "Matemática, Física, Biologia",
+      "created_at": 1595191080745
+    }
+  ]
+}

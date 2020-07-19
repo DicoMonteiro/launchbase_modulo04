@@ -1,0 +1,40 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "http://www.google.com",
+      "name": "Adriano Barreto Monteiro de Almeida",
+      "birth": 472521600000,
+      "gender": "M",
+      "services": "musculação, crossfit, zumba",
+      "created_at": 1595185085999
+    },
+    {
+      "id": 2,
+      "avatar_url": "http://www.google.com",
+      "name": "Adriano Barreto Monteiro de Almeida",
+      "birth": 472521600000,
+      "gender": "M",
+      "services": "musculação, crossfit, zumba",
+      "created_at": 1595185100863
+    },
+    {
+      "id": 3,
+      "avatar_url": "http://www.google.com",
+      "name": "Keyrus Consultoria",
+      "birth": 605664000000,
+      "gender": "M",
+      "services": "musculação, crossfit, zumba",
+      "created_at": 1595185775978
+    },
+    {
+      "id": 4,
+      "avatar_url": "http://www.gmail.com",
+      "name": "Joana Maria",
+      "birth": 292723200000,
+      "gender": "F",
+      "services": "musculação, crossfit",
+      "created_at": 1595185818608
+    }
+  ]
+}
