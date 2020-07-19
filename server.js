@@ -4,6 +4,8 @@ const routes = require("./routes")
 
 const server = express()
 
+// Essa linha serve para conseguir interpretar o req.body, no POST
+server.use(express.urlencoded({ extended: true }))
 server.use(express.static('public'))
 server.use(routes)
 
