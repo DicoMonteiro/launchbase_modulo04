@@ -2,6 +2,36 @@
 const fs = require("fs")
 
 const data = require("./data.json")
+const { time } = require("console")
+
+const { age } = require("./utils")
+
+// show - retornar os dados de um instrutor
+exports.show =function(req, res) {
+    // req.query.id
+    // req.body
+    // req.params.id = /:id
+
+    const { id } = req.params
+
+    const foundInstructor = data.instructors.find(function(instructor){
+        return instructor.id == id
+    })
+
+    if (!foundInstructor) return res.send("Instructor not found!")
+
+    const instructor = {
+        // Spread Operator (espalhando o ojeto)
+        ...foundInstructor,
+        age: age(foundInstructor.birth),
+        services: foundInstructor.services.split(","),
+        created_at: new Intl.DateTimeFormat("pt-BR").format(foundInstructor.created_at)
+    }
+
+    // return res.send(foundInstructor)
+    return res.render("instructors/show", { instructor: instructor })
+}
+
 // create
 exports.post = function(req, res) {
 
