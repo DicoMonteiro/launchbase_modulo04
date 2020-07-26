@@ -113,9 +113,9 @@ header {
     border: none;
 }
 /* Não funcionou usando o :first-child, como funciona o :last-child */
-/* .details .item:first-child {
+.details .item:first-child {
     border: none;
-} */
+}
 
 .details h3,
 .details .item div:nth-child(1) {
