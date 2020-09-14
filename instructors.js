@@ -6,6 +6,21 @@ const { time } = require("console")
 
 const { age, date } = require("./utils")
 
+// Index
+exports.index = function (req, res) {
+    const foundInstructor = data.instructors
+    let instructors = []
+    if (!foundInstructor) return res.send("Instructor not found!")
+
+    for (let instructor in foundInstructor) {
+        instructors[instructor] = {
+            ...foundInstructor[instructor],
+            services: foundInstructor[instructor].services.split(",")
+        }
+    }
+    return res.render("instructors/index", { instructors: instructors })
+}
+
 // show - retornar os dados de um instrutor
 exports.show =function(req, res) {
     // req.query.id
@@ -130,7 +145,8 @@ exports.put = function(req, res) {
     const instructor = {
         ...foundInstructor,
         ...req.body,
-        birth: Date.parse(req.body.birth)
+        birth: Date.parse(req.body.birth),
+        id: Number(req.body.id)
     }
 
     data.instructors[index] = instructor

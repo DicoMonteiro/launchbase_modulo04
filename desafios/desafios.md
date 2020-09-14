@@ -117,3 +117,31 @@ Você tem liberdade para escolher a estilização que preferir para esse desafio
 
 [x] - O botão de deletar deve ficar ao lado do botão de editar;
 [x] - O botão de deletar deve ser da cor vermelha.
+
+
+#### Desafio 4-6: Listagem de professores
+“A persistência é o caminho do êxito.”
+
+🚀 Sobre o desafio
+Nessa etapa você deve listar todos os professores salvos no arquivo 'json' e apresentá-los em formato de tabela.
+
+## Listagem
+
+[x] - Crie uma rota para repassar para o arquivo de listagem os dados dos professores salvos no arquivo json.
+
+## Tabela
+
+[x] - Crie um arquivo que irá mostrar os dados dos professores em formato de tabela. Utilize Nome completo, Acompanhamento e Ação como cabeçalhos.
+
+## Estilização
+
+Você tem liberdade para escolher a estilização que preferir para esse desafio, mas alguns pontos são obrigatórios:
+
+[x] - A tabela deve ocupar todo o espaçamento do cartão;
+[x] - Os cabeçalhos e os valores devem estar centralizados;
+[x] - A imagem deve ser apresentada antes do nome. Deve ter formato circular e tamanho de 40px;
+[x] - O campo Acompanhamento deve apresentar as matérias lecionadas de forma separada (array, assim como na página de apresentação de dados de um professor).
+
+
+
+#### Desafio 4-7: 
