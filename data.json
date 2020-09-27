@@ -1,4 +1,39 @@
 {
+  "members": [
+    {
+      "avatar_url": "https://source.unsplash.com/collection/10079188/500x500",
+      "name": "Adriano Barreto Monteiro de Almeida",
+      "email": "adriano.almeida@teste.com.br",
+      "birth": -618969600000,
+      "gender": "M",
+      "blood": "B-",
+      "weight": "97",
+      "height": "178",
+      "id": 1
+    },
+    {
+      "avatar_url": "https://source.unsplash.com/collection/497125/500x500",
+      "name": "Josimara Vieira Vale",
+      "email": "josimara.vale@teste.com.br",
+      "birth": 27907200000,
+      "gender": "F",
+      "blood": "O+",
+      "weight": "63",
+      "height": "155",
+      "id": 2
+    },
+    {
+      "avatar_url": "https://source.unsplash.com/collection/2021906/500x500",
+      "name": "Teste Adriano",
+      "email": "teste.adriano@teste.com",
+      "birth": 893289600000,
+      "gender": "M",
+      "blood": "AB-",
+      "weight": "87",
+      "height": "180",
+      "id": 3
+    }
+  ],
   "instructors": [
     {
       "id": 1,

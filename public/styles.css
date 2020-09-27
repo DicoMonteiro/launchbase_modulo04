@@ -76,7 +76,7 @@ header {
 .card {
     background-color: white;
     width: 800px;
-    min-height: 400px;
+    /* min-height: 50px; */
 
     /* espaçamento ao centro - para funcionar precisa do width e height*/
     margin: 45px auto;
@@ -124,7 +124,7 @@ header {
 /* ==== DETAILS ==== */
 
 .details {
-    padding: 32px;
+    padding: 8px;
 }
 
 .details .item {
@@ -174,7 +174,7 @@ header {
 
 /* ==== FORM ==== */
 
-input {
+input, select {
     width: 100%;
     outline: none;
     color: #555;
@@ -229,12 +229,13 @@ a.button {
 }
 
 .table-container thead tr th {
-    text-align: left;
+    text-align: center;
 }
 
 td, th {
     padding: 16px;
     border-bottom: 1px solid #d9d9d9;
+    text-align: center;
 }
 
 th {
@@ -261,9 +262,11 @@ tbody tr td:first-child span {
     border-radius: 50%;
     box-shadow: 3px 1px 6px -4px black;
     border: 2px solid white;
+    margin-right: 32px;
 }
 
-tbody tr td:last-child a {
+tbody tr td:last-child a,
+.table-container > a {
     background-color: var(--primary-color);
     padding: 8px 6px;
     text-decoration: none;
@@ -273,7 +276,29 @@ tbody tr td:last-child a {
     border-radius: 4px;
 }
 
+.table-container > a {
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
 .table-container thead tr th:last-child,
 td:last-child {
     text-align: center;
 }
+
+.table-container span {
+    padding: 4px 4px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    color: #777;
+    margin-top: 8px;
+    margin-right: 4px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* .table-container span:first-child {
+    margin-right: 4px;
+} */

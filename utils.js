@@ -26,7 +26,15 @@ module.exports = {
 
         // yyyy/mm/dd
         // console.log(`${year}-${month}-${day}`)
-        return `${year}-${month}-${day}`
+        // return `${year}-${month}-${day}`
+        // Estruturando para retornar um objeto e poder ser pego os dados individualmente
+        return {
+            day,
+            month,
+            year,
+            iso: `${year}-${month}-${day}`,
+            birthDay: `${day}/${month}`
+        }
     }
 }
 

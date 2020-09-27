@@ -1,10 +1,10 @@
 // uma função do node para escrever um arquivo e entre outras funções
 const fs = require("fs")
 
-const data = require("./data.json")
+const data = require("../data.json")
 const { time } = require("console")
 
-const { age, date } = require("./utils")
+const { age, date } = require("../utils")
 
 // Index
 exports.index = function (req, res) {
@@ -19,6 +19,10 @@ exports.index = function (req, res) {
         }
     }
     return res.render("instructors/index", { instructors: instructors })
+}
+
+exports.create = function(req, res) {
+    return res.render('instructors/create')
 }
 
 // show - retornar os dados de um instrutor
@@ -47,7 +51,7 @@ exports.show =function(req, res) {
     return res.render("instructors/show", { instructor: instructor })
 }
 
-// create
+// post
 exports.post = function(req, res) {
 
     // req.body
@@ -120,7 +124,7 @@ exports.edit = function(req, res) {
 
     const instructor = {
         ...foundInstructor,
-        birth: date(foundInstructor.birth) // yyyy-mm-dd
+        birth: date(foundInstructor.birth).iso // yyyy-mm-dd
     }
 
     return res.render('instructors/edit', { instructor })
